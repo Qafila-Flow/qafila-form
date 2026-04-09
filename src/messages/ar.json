@@ -213,5 +213,24 @@
         "serverError": "خطأ في الخادم",
         "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
         "tryAgain": "حاول مرة أخرى"
+    },
+    "survey": {
+        "submitSurvey": "إرسال",
+        "submitting": "جاري الإرسال...",
+        "requiredField": "هذا السؤال مطلوب",
+        "thankYou": "شكراً لك!",
+        "responseRecorded": "تم تسجيل ردك بنجاح.",
+        "surveyNotFound": "الاستطلاع غير موجود",
+        "surveyClosed": "هذا الاستطلاع لم يعد يقبل الردود.",
+        "yourName": "اسمك (اختياري)",
+        "yourEmail": "بريدك الإلكتروني (اختياري)",
+        "selectOne": "اختر خياراً واحداً",
+        "selectAll": "اختر كل ما ينطبق",
+        "enterResponse": "أدخل ردك...",
+        "stronglyDisagree": "لا أوافق بشدة",
+        "disagree": "لا أوافق",
+        "neutral": "محايد",
+        "agree": "أوافق",
+        "stronglyAgree": "أوافق بشدة"
     }
 }

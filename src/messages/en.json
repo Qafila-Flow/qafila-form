@@ -213,5 +213,24 @@
         "serverError": "Server error",
         "networkError": "Network error. Please check your connection.",
         "tryAgain": "Try Again"
+    },
+    "survey": {
+        "submitSurvey": "Submit",
+        "submitting": "Submitting...",
+        "requiredField": "This question is required",
+        "thankYou": "Thank You!",
+        "responseRecorded": "Your response has been recorded successfully.",
+        "surveyNotFound": "Survey not found",
+        "surveyClosed": "This survey is no longer accepting responses.",
+        "yourName": "Your Name (optional)",
+        "yourEmail": "Your Email (optional)",
+        "selectOne": "Select one option",
+        "selectAll": "Select all that apply",
+        "enterResponse": "Enter your response...",
+        "stronglyDisagree": "Strongly Disagree",
+        "disagree": "Disagree",
+        "neutral": "Neutral",
+        "agree": "Agree",
+        "stronglyAgree": "Strongly Agree"
     }
 }
