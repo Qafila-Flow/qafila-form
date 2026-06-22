@@ -16,14 +16,24 @@ export function SurveyHeader() {
 
       <div className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo — both render with static src; CSS switches them based on the
+              `.dark` class next-themes sets on <html> before paint. This avoids the
+              SSR/client hydration mismatch and the wrong-logo flash on refresh. */}
           <Link href={`/${locale}`} className="flex items-center gap-2 group">
             <Image
-              src="/Qafila-01.svg"
+              src="/logo-light.svg"
               alt="Qafila"
               width={110}
               height={44}
-              className="h-8 w-auto transition-opacity group-hover:opacity-80"
+              className="h-8 w-auto transition-opacity group-hover:opacity-80 block in-[.dark]:hidden"
+              priority
+            />
+            <Image
+              src="/logo-dark.svg"
+              alt="Qafila"
+              width={110}
+              height={44}
+              className="h-8 w-auto transition-opacity group-hover:opacity-80 hidden in-[.dark]:block"
               priority
             />
           </Link>

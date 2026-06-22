@@ -11,13 +11,22 @@ export function SurveyFooter() {
       <div className="bg-background border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
           <div className="flex flex-col items-center gap-4">
-            {/* Logo */}
+            {/* Logo — both render with static src; CSS switches them based on the
+                `.dark` class next-themes sets on <html> before paint, avoiding the
+                SSR/client hydration mismatch and wrong-logo flash on refresh. */}
             <Image
-              src="/Qafila-01.svg"
+              src="/logo-light.svg"
               alt="Qafila"
               width={90}
               height={36}
-              className="h-6 w-auto  opacity-60"
+              className="h-6 w-auto opacity-60 block in-[.dark]:hidden"
+            />
+            <Image
+              src="/logo-dark.svg"
+              alt="Qafila"
+              width={90}
+              height={36}
+              className="h-6 w-auto opacity-60 hidden in-[.dark]:block"
             />
 
             {/* Tagline */}

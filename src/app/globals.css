@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Make the `dark:` variant follow the `.dark` class that next-themes sets on
+   <html> (class strategy), instead of Tailwind v4's default OS-level
+   `prefers-color-scheme` media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Qafila Design System */
 :root {
   /* Brand Colors */
