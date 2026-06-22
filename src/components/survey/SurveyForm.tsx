@@ -133,33 +133,20 @@ export function SurveyForm({ survey, locale }: SurveyFormProps) {
     <div className="py-8 px-4 sm:px-6" dir={isAr ? "rtl" : "ltr"}>
       <div className="max-w-2xl mx-auto space-y-5">
         {/* Survey hero card */}
-        <div
-          className="relative rounded-2xl overflow-hidden"
-          style={{
-            background:
-              "linear-gradient(135deg, var(--color-primary) 0%, #2d2d2a 100%)",
-          }}
-        >
+        <div className="relative rounded-2xl overflow-hidden border border-[rgba(192,131,103,0.25)] bg-[linear-gradient(135deg,#fdf4e8_0%,#f7e6d2_100%)] dark:border-transparent dark:bg-[linear-gradient(135deg,#1d1d1b_0%,#2d2d2a_100%)]">
           {/* Decorative circle accents */}
           <div
-            className="absolute -top-8 -end-8 w-40 h-40 rounded-full opacity-10"
+            className="absolute -top-8 -end-8 w-40 h-40 rounded-full opacity-25 dark:opacity-10"
             style={{ background: "var(--color-secondary)" }}
           />
           <div
-            className="absolute -bottom-10 -start-6 w-28 h-28 rounded-full opacity-10"
+            className="absolute -bottom-10 -start-6 w-28 h-28 rounded-full opacity-20 dark:opacity-10"
             style={{ background: "var(--color-secondary-2)" }}
           />
 
           <div className="relative px-7 py-8">
             {/* Question count badge */}
-            <span
-              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full mb-4"
-              style={{
-                background: "rgba(235,166,86,0.15)",
-                color: "var(--color-secondary)",
-                border: "1px solid rgba(235,166,86,0.3)",
-              }}
-            >
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full mb-4 border bg-[rgba(159,95,66,0.12)] text-[#9f5f42] border-[rgba(159,95,66,0.3)] dark:bg-[rgba(235,166,86,0.15)] dark:text-[#eba656] dark:border-[rgba(235,166,86,0.3)]">
               <svg
                 className="w-3 h-3"
                 fill="none"
@@ -177,13 +164,13 @@ export function SurveyForm({ survey, locale }: SurveyFormProps) {
               {sortedQuestions.length !== 1 ? "s" : ""}
             </span>
 
-            <h1 className="text-2xl sm:text-3xl font-bold text-white leading-snug">
+            <h1 className="text-2xl sm:text-3xl font-bold leading-snug text-[#1d1d1b] dark:text-white">
               {displayTitle}
             </h1>
             {displayDesc && (
               <p
                 className="mt-2 text-sm leading-relaxed"
-                style={{ color: "#c8c8c8" }}
+                style={{ color: "var(--text-gray-50)" }}
               >
                 {displayDesc}
               </p>
